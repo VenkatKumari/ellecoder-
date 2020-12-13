@@ -18,8 +18,6 @@ const Nav = () => {
         <Link to="/">
           <img id="#logo" src={logo250px} alt="logo" />
         </Link>
-
-        <h1>Believe to make it happen!</h1>
       </motion.div>
 
       <ul className="nav-list">

@@ -1,5 +1,12 @@
 import React from "react";
 import tripmainpage from "../img/tripmainpage.png";
+import capture from "../img/capture.png";
+import musicplayer from "../img/musicplayer.png";
+import epita from "../img/epita.png";
+import epita1 from "../img/epita1.png";
+import days from "../img/days.png";
+import photon from "../img/photon.jpg";
+import summerwood from "../img/summerwood.jpg";
 import photographyfirst from "../img/photographyfirst.png";
 import { AnimateSharedLayout } from "framer-motion";
 //Images
@@ -19,6 +26,8 @@ const ProjectSection = () => {
           <div className="projects">
             <img src={tripmainpage} alt="" />
             <img src={photographyfirst} alt="" />
+            <img src={epita1} alt="" />
+            <img src={epita} alt="" />
           </div>
         </Toggle>
 
@@ -27,8 +36,8 @@ const ProjectSection = () => {
             <h1>JavaScript Projects</h1>
           </div>
           <div className="projects">
-            <img src={tripmainpage} alt="" />
-            <img src={photographyfirst} alt="" />
+            <img src={days} alt="" />
+            <img src={photon} alt="" />
           </div>
         </Toggle>
 
@@ -37,8 +46,9 @@ const ProjectSection = () => {
             <h1>React Projects</h1>
           </div>
           <div className="projects">
-            <img src={tripmainpage} alt="" />
-            <img src={photographyfirst} alt="" />
+            <img src={summerwood} alt="" />
+            <img src={capture} alt="" />
+            <img src={musicplayer} alt="" />
           </div>
         </Toggle>
       </AnimateSharedLayout>
