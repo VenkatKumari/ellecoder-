@@ -1,26 +1,4 @@
-import React from "react";
-import {Link} from 'react-router-dom';
-//Styles
-import { HeroStyling } from "../Styles/HeroStyling";
-
-//Animation
-
-
-const Hero = () => {
-  return (
-    <HeroStyling>
-      <div className="intro">
-        <div className="intro-text">
-          <h2>Hi</h2> <br/>
-          <h2>I'm Venkat Kumari</h2>
-          <h3>Front End Web Developer</h3>
-          <p>HTML5, CSS3, JavaScript, ReactJS, NodeJS.</p>
-    
-          <Link to='/projects'> <button>See my projects</button>
-          </Link>
-        </div>
-        <div className="intro-images">
-        <svg width="783" height="525" viewBox="0 0 783 525" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="783" height="525" viewBox="0 0 783 525" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="Frame">
 <g id="Group">
 <path id="Vector" d="M622 9.33093H9.07358V383.285H622V9.33093Z" fill="#E6E6E6"/>
@@ -90,11 +68,3 @@ const Hero = () => {
 </g>
 </g>
 </svg>
-
-        </div>
-      </div>
-    </HeroStyling>
-  );
-};
-
-export default Hero;

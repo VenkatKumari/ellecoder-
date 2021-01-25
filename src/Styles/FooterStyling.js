@@ -1,29 +1,29 @@
-import React from "react";
 import styled from "styled-components";
-//Images
-import wave from "../img/wave.svg";
+
 
 const FooterStyling = styled.div`
-  background: url(${wave});
-  background-repeat: repeat;
-  background-position: 50%;
 
-  background-size: contain;
-  min-height: 15vh;
+ min-height: 10vh; 
+ width: 60%;
+ margin: auto;
+ flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
-  padding-top: 7rem;
+  
   .footer-text {
+   
     padding-left: 5rem;
-    color: white;
+    color: #C9EEFA;
   }
-  .footer-social {
-    flex: 2 1 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
+  .footer-social{
+    img{
+      padding: 0rem 1rem;
+      width: 50px;
+    }
   }
+ 
 `;
 
 export default FooterStyling;

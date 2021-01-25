@@ -10,7 +10,7 @@ import ContactPage from "./pages/ContactPage";
 import NotFound from "./components/NotFound";
 //styles
 import { GlobalStyle } from "./components/GlobalStyle";
-import Footer from "./components/Footer";
+
 
 function App() {
   const location = useLocation();
@@ -35,7 +35,7 @@ function App() {
         </Route>
         <Redirect to="/404" />
       </Switch>
-      <Footer />
+     
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import logo250px from "../img/logo250px.png";
 import { motion } from "framer-motion";
 import { logoAnimation } from "../Styles/Animation";
 
@@ -16,7 +15,7 @@ const Nav = () => {
         animate="show"
       >
         <Link to="/">
-          <img id="#logo" src={logo250px} alt="logo" />
+          <h1 id="#logo"> ElleCoder </h1>
         </Link>
       </motion.div>
 
@@ -51,6 +50,7 @@ const Nav = () => {
 };
 
 const NavStyle = styled.div`
+background: black;
   min-height: 10vh;
   display: flex;
   width: 100%;
@@ -58,27 +58,33 @@ const NavStyle = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
-  background: white;
+
+  
   .logo {
+    flex: 1 1 10rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex: 1 1 20rem;
 
+    a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+ 
+
     h1 {
       font-family: "Sacramento", cursive;
-      padding-left: 2rem;
-      font-size: 2.5rem;
+      text-decoration: none;
+      color:white;
+      font-size: 2.7rem;
+      
     }
-    img {
-      width: 75px;
-      height: 75px;
-      border-radius: 50%;
-      cursor: pointer;
-    }
+     
   }
   ul {
+    flex: 2 1 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,20 +96,50 @@ const NavStyle = styled.div`
 
       a {
         text-decoration: none;
-        color: #252525;
+        color:white;
+        font-size: 3rem;
+        
+      }
+
+      
+    }&²
+  }
+  @media screen and (max-width: 500px){
+    min-height: 13vh;
+    html{
+      font-size: 30%;
+    }
+    svg{
+      display: none;
+    } 
+    .logo{
+      h1{
         font-size: 3rem;
       }
+    }
+    ul{
+      li{
+        a{
+          font-size: 2.3rem;
+        }
+        
+        padding: 0rem 2rem 0rem 2rem;
+    }
     }
   }
 `;
 
 const Line = styled(motion.div)`
   height: 0.3rem;
-  background: #f9a1b6;
+  background: white;
   width: 0%;
   position: absolute;
   bottom: -50%;
   left: 52%;
+  @media screen and (max-width: 500px){
+  bottom: -30%;
+  left: 24%;
+  }
 `;
 
 export default Nav;

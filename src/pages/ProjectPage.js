@@ -1,12 +1,15 @@
 import React from "react";
-import ProjectSection from "../components/ProjectSection";
-import { ProjectStyle } from "../Styles/ProjectStyling";
+import NewProject from '../components/NewProject';
+import { Helmet } from "react-helmet";
 
 const ProjectPage = () => {
   return (
-    <ProjectStyle>
-      <ProjectSection />
-    </ProjectStyle>
+    <div>
+      <Helmet>
+        <title>ElleCoder | Projects</title>
+      </Helmet>
+      <NewProject />
+    </div>
   );
 };
 

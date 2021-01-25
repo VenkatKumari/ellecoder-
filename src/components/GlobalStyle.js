@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 //image
-import flowersblackbg from "../img/flowersblackbg.jpg";
 const size = {
   mobileS: "320px",
   mobileM: "375px",
@@ -30,41 +29,46 @@ export const GlobalStyle = createGlobalStyle`
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    background: #0F52BA;
+
 }
+
+button {
+      width: 40%;
+      align-self: center;
+      margin-top: 3rem;
+      text-decoration: none;
+      border: none;
+      padding: 2rem 0rem;
+      cursor: pointer;
+      background:black;
+      color: white;
+      transition: 0.5s ease-out;
+      font-size: 2rem;
+
+      &:hover {
+        background: #4682B4;
+        color: black;
+      }
+    }
 
 @media screen and (max-width: 3000px){
   html {
     font-size: 53%;
   }
-
 }
-
-}
-
-  
-  
 @media screen and (max-width: 1334px) {
   html {
     font-size: 53%;
   }
-
-
   svg {
-    
-    width: 100%;
-  }
-
-  
+     width: 100%;
+  } 
 }
 
 @media screen and (max-width: 754px) {
   html {
     font-size: 45%;
-  }
-
-  svg {
-    margin-top: 3rem;
-    height: 100%;
   }
   
   .logo{
@@ -74,21 +78,7 @@ body {
   ul{
   padding-top: 2rem;
   }
- 
- form{
-   
- }
   
-
-  .intro-text {
-    margin-top: 5rem;
-    text-align: center;
-    
-  }
-
-  .intro-images {
-    text-align: center;
-  }
 
   .intro-social {
     @include flex(center, center, row);
@@ -99,4 +89,5 @@ body {
   }
 }
 
-`;
+
+`

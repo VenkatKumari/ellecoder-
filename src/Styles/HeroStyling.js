@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const HeroStyling = styled.div`
-  min-height: 75vh;
-  overflow: hidden;
+  min-height: 80vh;
+  display: flex;
 
   .intro {
     width: 90%;
+    padding: 10rem 7rem;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -16,10 +17,7 @@ export const HeroStyling = styled.div`
     }
 
     h2 {
-      background: linear-gradient(to right, #cc0e74, #f9a1b6);
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      -webkit-background-clip: text;
+     color: #f3f4f5;
       font-size: 8rem;
       padding-top: 2rem;
       display: inline-block;
@@ -33,24 +31,7 @@ export const HeroStyling = styled.div`
     p {
       padding-top: 4rem;
       font-size: 3rem;
-      color: #2c2c2c;
-    }
-  }
-
-  .splash {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    height: 100%;
-    z-index: -1;
-  }
-
-  .intro-social {
-    margin-top: 4rem;
-
-    a {
-      padding-right: 5rem;
-      text-decoration: none;
+      color: #a0a0a0;
     }
   }
 
@@ -66,14 +47,14 @@ export const HeroStyling = styled.div`
     flex: 1 1 40rem;
   }
 
-  #leafleft {
-    animation: leaf 1.5s ease infinite alternate 0.5s;
-  }
-
+  /* #leaf {
+    animation: leaf 3s ease-out infinite alternate 0.5s;
+  } */
+/* 
   #me {
     animation: me 1s ease infinite alternate;
     transform-origin: bottom;
-  }
+  } */
 
   #arrow {
     animation: clock 60s infinite linear;
@@ -82,13 +63,23 @@ export const HeroStyling = styled.div`
   }
 
   #coffeesteam {
-    animation: steam 2s linear infinite;
+    animation: steam 3s linear infinite;
   }
 
-  #codeline1 {
-    animation: coding 4s alternate-reverse infinite;
+  #line1 {
+    animation: coding 3s alternate-reverse infinite ;
   }
 
+#line2{
+  animation: coding 3s normal infinite;
+}
+
+/* #line3{
+ animation: codinglines 2s alternate infinite;
+} 
+#line4{
+  animation: codinglines 3s normal infinite;
+} */
   /* #codeline2 {
     animation: coding 1s linear infinite 0.5s;
   } 
@@ -97,15 +88,17 @@ export const HeroStyling = styled.div`
   }
   */
 
-  @keyframes leaf {
+  /* @keyframes leaf {
     from {
-      transform: translateY(0%);
+      transform: translateY(0%) rotateX(0deg);
+     
     }
 
     to {
-      transform: translateY(-30%);
+      transform: translateY(22%) rotateX(60deg);
+      
     }
-  }
+  } */
 
   @keyframes me {
     from {
@@ -138,12 +131,70 @@ export const HeroStyling = styled.div`
 
   @keyframes coding {
     from {
-      transform: translateX(0%);
-      opacity: 1;
-    }
-    to {
       transform: translate(-10%);
       opacity: 0;
     }
+    to {
+      transform: translate(0%);
+      opacity: 1;
+    }
   }
+  @keyframes codinglines {
+    from {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+  }
+  @media screen and (max-width: 1334px){
+   .intro{
+     padding: 1rem 1rem;
+     min-height: 80vh;
+    svg{
+     
+     width: 90%;
+   }
+   }
+   
+     }
+     @media screen and (max-width: 754px){
+
+svg {
+  margin: 2rem 0rem;
+  width: 100%;
+  
+}
+.intro{
+
+}
+.intro-text {
+  margin-top: 5rem;
+  text-align: center;
+  
+}
+
+.intro-images {
+  text-align: center;
+}
+}
+ 
+  @media screen and (max-width: 500px){
+    min-height: 60vh;
+
+    .intro{
+      width: 100%;
+      margin: 0rem 0rem;
+      padding: 0rem 0rem;
+    }
+    svg{
+      display: none;
+    }
+ 
+}
+
+
 `;
+
